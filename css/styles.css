@@ -12,8 +12,8 @@ body {
 }
 
 .wrapper{
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   background-color: #191c32;
   color: #fff;
 }
@@ -66,12 +66,65 @@ body {
   display: none;
 } 
 
+.skill__title {
+  margin-top: 0.5em;
+  color: rgb(47, 232, 232);
+  text-align: center;
+}
+
+.container__skill-icoms {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: center;
+ align-items: center;
+ gap: 10px;
+}
+
+.container__icoms-i{
+  width: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1em;
+  font-size: 1.5em;
+}
+
+.container__icoms-i i {
+  font-size: 1.5em;
+}
+
+.bxl-css3 {
+  color: rgb(128, 114, 250);
+}
+
+.bxl-html5 {
+  color: rgb(241, 86, 86);
+}
+
+.bxl-javascript {
+  color: yellow;
+}
+
+.bxl-git {
+  color: rgb(250, 112, 62);
+}
+
+.bxl-react {
+  color: rgb(73, 226, 226);
+}
+
+.bxl-typescript {
+  color: rgb(8, 8, 232);
+}
+
 .main {
   margin:  0 auto;
-  width: 80vw;
-  height: 80vh;
+  width: 80%;
+  height: 80%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
   align-items: center;
 }
 
@@ -102,6 +155,11 @@ h1 span {
   box-shadow: 1px 3px 11px -5px rgba(102, 231, 200, .69) ;
 }
 
+.download-home {
+ margin-bottom: 20px;
+ text-align: center;
+}
+
 .download-cv:hover {
   background-color: #fff;
   box-shadow: none;
@@ -109,13 +167,15 @@ h1 span {
 
 .about {
   display: grid;
-  grid-template-columns:repeat(10, 1fr) ;
-  width: 100vw;
+  grid-template-columns:repeat(10, 1fr);
+  justify-content: center;
+  width: 100%;
   align-items: center;
 }
 
 .about img {
-  max-width: 100%;
+  margin-left: 10px;
+  max-width: 90%;
   grid-column: 1/5;
 }
 
@@ -127,6 +187,11 @@ h1 span {
 .about__info h2 {
   font-size: 2em;
   color: #191c32;
+}
+
+.about__info p {
+  color: rgb(80, 135, 137);
+  font-weight: 560;
 }
 
 .divider {
@@ -143,7 +208,7 @@ h1 span {
 
 .portfolio,
 .contact__section {
-  width: 100vw;
+  width: 100%;
   color: #fff;
   background-color: #191c32;
 }
@@ -228,23 +293,26 @@ h1 span {
 }
 
 .container__contact {
+  width: 100%;
   padding: 3em;
   margin: 0 auto;
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 1em;
+  margin-top: -100px;
 }
 
 .container__contact img {
-  width: 750px;
+  width: 60%;
   height: 700px;
-  bottom: 0px;
+  object-fit: contain;
 }
 
 .form {
  display: flex;
  flex-direction: column;
- width: 30vw;
+ width: 100%;
  margin-top: 2em;
 }
 
@@ -286,18 +354,20 @@ h1 span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100vw;
+  width: 100%;
   height: 200px;
   background-color: aqua;
 }
 
 .footer__content h2 {
   font-size: 3em;
+  
 }
 
 .footer__content h5,
 .sotial__networks i {
   font-size: 1.5em;
+  text-align: center;
 }
 
 .sotial__networks  {
@@ -307,6 +377,9 @@ h1 span {
   margin-top: 1em;
 }
 
+.sotial__networks i {
+ color: black;
+}
 
 @media screen and (max-width: 800px) {
   .menu {
