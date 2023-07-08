@@ -66,11 +66,20 @@ body {
   display: none;
 } 
 
+.info__content-p {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .skill__title {
   margin-top: 0.5em;
   color: rgb(47, 232, 232);
   text-align: center;
 }
+
 
 .container__skill-icoms {
  display: flex;
@@ -295,28 +304,24 @@ h1 span {
 .container__contact {
   width: 100%;
   padding: 3em;
-  margin: 0 auto;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 1em;
   margin-top: -100px;
 }
 
-.container__contact img {
-  width: 60%;
-  height: 700px;
-  object-fit: contain;
-}
-
 .form {
  display: flex;
  flex-direction: column;
  width: 100%;
+ width: 600px;
  margin-top: 2em;
 }
 
 .form input {
+
   padding: 10px 20px;
   margin-bottom: 1em;
   background: none;
@@ -378,7 +383,7 @@ h1 span {
 }
 
 .sotial__networks i {
- color: black;
+ color: white;
 }
 
 @media screen and (max-width: 800px) {
