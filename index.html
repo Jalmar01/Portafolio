@@ -17,10 +17,10 @@
             <h2>J <span class="last__name">V</span></h2>
           </div>
           <ul class="menu" id="menu">
-            <li class="active" ><a href="#">Home</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li class="active" ><a href="#inicio">Home</a></li>
+            <li><a href="#acerca_de">About me</a></li>
+            <li><a href="#proyectos">Portfolio</a></li>
+            <li><a href="#contactos">Contact</a></li>
           </ul>
           <div class="toggle__menu">
             <i class='bx bx-menu' id="toggle__open"></i>
@@ -29,7 +29,7 @@
         </nav>
       </header>
 
-        <main class="main">
+        <main class="main" id="Inicio">
           <div class="info__content">
               <h1 class="info__content-subtitle">
                   Front-End Deceloper
@@ -76,7 +76,12 @@
                   </div>
                 </div>
                 <a dawnload href="#">
-                  <button class="download-cv  download-home">Download CV</button>
+                  <a downloand="CV_Jalmar_Villarreal" href="/img/CV_jalmar_villarreal.pdf">
+                    <button class="download-cv  download-home">
+                      Download CV
+                    </button>
+                  </a>
+                 
                 </a>
               </div>
           </div>
@@ -84,7 +89,7 @@
         </main>
    </div>
 
-   <div class="about">
+   <div class="about" id="acerca_de">
     <img src="./img/Jalmar__2.jpeg" alt="about Jalmar img">
    
    <div class="about__info">
@@ -93,11 +98,16 @@
         <p>I like Front-end Web Design and Development, currently based in Ecuador.</p>
           <p>I've been building stuff on the web and my focus is on creating engaging, accessible & performant interfaces for humans.</p>
         <p>Beyond being a programmer, I like to play sports like soccer, futsal, I enjoy listening to music in my free time, I recently discovered that, I am passionate about the gym and I would like to travel to other countries and learn about their cultures.</p>
-        <button class="download-cv">Read more</button>
+        
+        <a downloand="CV_Jalmar_Villarreal" href="/img/CV_jalmar_villarreal.pdf">
+          <button class="download-cv">
+            Read more
+          </button>
+        </a>
       </div>
    </div>
    
-   <div class="portfolio">
+   <div class="portfolio" id="proyectos">
     <div class="portfolio-headings">
       <h2>My Portfolio</h2>
       <div class="divider"></div> 
@@ -186,7 +196,7 @@
     
    </div>
   
-   <div class="contact__section">
+   <div class="contact__section" id="contactos">
       <div class="contact__heading">
         <h2>Keep in touch</h2>
         <div class="divider"></div>
